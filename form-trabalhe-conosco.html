@@ -27,52 +27,54 @@
           <section class="row justify-content-center">
               <section class="col-12 col-sm-2 col-md-3">
                 <form action="post.php" method="POST" class="form-container">
+                <div class="form group">
+                    <legend>Formulário: TRABALHE CONOSCO</legend>
                     <label for="nome_completo">Nome completo</label>
-                    <input id="nome_completo" name="curriculo[nome_completo]">
+                    <input id="nome_completo" name="curriculo[nome_completo]" class="form-control">
                     <br>
-
+                
                     <label for="email_principal">E-mail principal</label>
-                    <input id="email_principal" name="curriculo[email_principal]">
+                    <input id="email_principal" name="curriculo[email_principal]"class="form-control">
                     <br>
 
                     <label for="email_secundario">E-mail secundário</label>
-                    <input id="email_secundario" name="curriculo[email_secundario]">
+                    <input id="email_secundario" name="curriculo[email_secundario]" class="form-control">
                     <br>
 
                     <label for="cpf">CPF</label>
-                    <input id="cpf" name="curriculo[cpf]">
+                    <input id="cpf" name="curriculo[cpf]"class="form-control" >
                     <br>
-
+                    <label>Sexo:  </label>
                     <label><input type="radio" name="curriculo[sexo]" value="Masculino"> Masculino</label>
                     <label><input type="radio" name="curriculo[sexo]" value="Feminino"> Feminino</label>
                     <br>
 
                     <label for="telefone">Telefone</label>
-                    <input id="telefone" name="curriculo[telefone]">
+                    <input id="telefone" name="curriculo[telefone]" class="form-control">
                     <br>
 
                     <label for="celular">Celular</label>
-                    <input id="celular" name="curriculo[celular]">
+                    <input id="celular" name="curriculo[celular]" class="form-control">
                     <br>
 
                     <label for="skype_gtalk">Skype ou gtalk</label>
-                    <input id="skype_gtalk" name="curriculo[skype_gtalk]">
+                    <input id="skype_gtalk" name="curriculo[skype_gtalk]" class="form-control">
                     <br>
 
                     <label for="linkedin">Linkedin</label>
-                    <input id="linkedin" name="curriculo[linkedin]">
+                    <input id="linkedin" name="curriculo[linkedin]" class="form-control">
                     <br>
 
                     <label for="facebook">Facebook</label>
-                    <input id="facebook" name="curriculo[facebook]">
+                    <input id="facebook" name="curriculo[facebook]" class="form-control"> 
                     <br>
 
                     <label for="youtube">Youtube</label>
-                    <input id="youtube" name="curriculo[youtube]">
+                    <input id="youtube" name="curriculo[youtube]" class="form-control">
                     <br>
 
                     <label for="data_nascimento">Data de nascimento</label>
-                    <input id="data_nascimento" name="curriculo[data_nascimento]">
+                    <input id="data_nascimento" name="curriculo[data_nascimento]" class="form-control">
                     <br>
 
                     <label for="estado_civil">Estado civil</label>
@@ -101,30 +103,30 @@
                     <fieldset>
                         <legend>Endereço</legend>
                         <label for="cep">CEP</label>
-                        <input id="cep" name="curriculo[endereco_attributes][cep]">
+                        <input id="cep" name="curriculo[endereco_attributes][cep]" class="form-control">
                         <br>
 
                         <label for="logradouro">Logradouro</label>
-                        <input id="logradouro" name="curriculo[endereco_attributes][logradouro]">
+                        <input id="logradouro" name="curriculo[endereco_attributes][logradouro]" class="form-control">
                         <br>
 
                         <label for="numero">Numero</label>
-                        <input id="numero" name="curriculo[endereco_attributes][numero]">
+                        <input id="numero" name="curriculo[endereco_attributes][numero]" class="form-control">
                         <br>
 
                         <label for="complemento">Complemento</label>
-                        <input id="complemento" name="curriculo[endereco_attributes][complemento]">
+                        <input id="complemento" name="curriculo[endereco_attributes][complemento]" class="form-control">
                         <br>
 
                         <label for="bairro">Bairro</label>
-                        <input id="bairro" name="curriculo[endereco_attributes][bairro]">
+                        <input id="bairro" name="curriculo[endereco_attributes][bairro]" class="form-control"> 
                         <br>
                     </fieldset>
 
                     <fieldset>
                         <legend>Idiomas</legend>
                         <label for="idioma_nome">Nome</label>
-                        <input id="idioma_nome" name="curriculo[idiomas_attributes][1469130103719][nome]">
+                        <input id="idioma_nome" name="curriculo[idiomas_attributes][1469130103719][nome]" class="form-control">
                         <br>
 
                         <label for="idioma_nivel">Nível</label>
@@ -309,6 +311,8 @@
 
                         <label for="experiencia_profissional_descricao_atividades">Descrição das atividades</label><br>
                         <textarea id="experiencia_profissional_descricao_atividades" name="curriculo[experiencia_profissinais_attributes][1469130933693][descricao_atividades]"></textarea>
+
+                      </div>
                     </fieldset>
 
 
