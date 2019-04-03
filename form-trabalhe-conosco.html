@@ -25,14 +25,16 @@
        crossorigin="anonymous"></script>
       <section class="container-fluid bg">
           <section class="row justify-content-center">
-              <section class="col-12 col-sm-2 col-md-3">
                 <form action="post.php" method="POST" class="form-container">
-                <div class="form group">
-                    <legend>Formulário: TRABALHE CONOSCO</legend>
-                    <label for="nome_completo">Nome completo</label>
-                    <input id="nome_completo" name="curriculo[nome_completo]" class="form-control">
-                    <br>
-                
+                <div class="form group row">
+                     <legend>Formulário: TRABALHE CONOSCO</legend>
+                     <label for="nome_completo" class="col-sm-2 col-form-label">Nome completo</label>
+                     <br>
+                <div class="col-sm-10">
+                     <input id="nome_completo" name="curriculo[nome_completo]" class="form-control">
+                </div>
+                    
+                </div>
                     <label for="email_principal">E-mail principal</label>
                     <input id="email_principal" name="curriculo[email_principal]"class="form-control">
                     <br>
@@ -78,7 +80,7 @@
                     <br>
 
                     <label for="estado_civil">Estado civil</label>
-                    <select id="estado_civil" name="curriculo[estado_civil]">
+                    <select class="form-control" id="estado_civil" name="curriculo[estado_civil]">
                         <option value=""></option>
                         <option value="Casado">Casado</option>
                         <option value="Solteiro">Solteiro</option>
@@ -89,7 +91,7 @@
                     <br>
 
                     <label for="senioridade">Senioridade</label>
-                    <select id="senioridade" name="curriculo[senioridade]">
+                    <select class="form-control" id="senioridade" name="curriculo[senioridade]">
                         <option value=""></option>
                         <option value="Estágio">Estágio</option>
                         <option value="Trainee">Trainee</option>
@@ -130,7 +132,7 @@
                         <br>
 
                         <label for="idioma_nivel">Nível</label>
-                        <select name="curriculo[idiomas_attributes][1469130103719][nivel]">
+                        <select class="form-control" name="curriculo[idiomas_attributes][1469130103719][nivel]">
                             <option value=""></option>
                             <option value="Básico">Básico</option>
                             <option value="Intermediário">Intermediário</option>
@@ -146,7 +148,7 @@
                         <br>
 
                         <label for="idioma_nivel">Nível</label>
-                        <select name="curriculo[idiomas_attributes][1469130103720][nivel]">
+                        <select class="form-control" name="curriculo[idiomas_attributes][1469130103720][nivel]">
                             <option value=""></option>
                             <option value="Básico">Básico</option>
                             <option value="Intermediário">Intermediário</option>
@@ -162,7 +164,7 @@
                         <br>
 
                         <label for="idioma_nivel">Nível</label>
-                        <select name="curriculo[idiomas_attributes][1469130103721][nivel]">
+                        <select class="form-control" name="curriculo[idiomas_attributes][1469130103721][nivel]">
                             <option value=""></option>
                             <option value="Básico">Básico</option>
                             <option value="Intermediário">Intermediário</option>
@@ -246,7 +248,7 @@
                         <br>
 
                         <label for="experiencia_profissional_descricao_atividades">Descrição das atividades</label><br>
-                        <textarea id="experiencia_profissional_descricao_atividades" name="curriculo[experiencia_profissinais_attributes][1469130933690][descricao_atividades]"></textarea>
+                        <textarea class="form-control" id="experiencia_profissional_descricao_atividades" name="curriculo[experiencia_profissinais_attributes][1469130933690][descricao_atividades]"></textarea>
                         <br>
 
                         <hr>
@@ -268,7 +270,7 @@
                         <br>
 
                         <label for="experiencia_profissional_descricao_atividades">Descrição das atividades</label><br>
-                        <textarea id="experiencia_profissional_descricao_atividades" name="curriculo[experiencia_profissinais_attributes][1469130933691][descricao_atividades]"></textarea>
+                        <textarea class="form-control" id="experiencia_profissional_descricao_atividades" name="curriculo[experiencia_profissinais_attributes][1469130933691][descricao_atividades]"></textarea>
 
                         <hr>
 
@@ -289,7 +291,7 @@
                         <br>
 
                         <label for="experiencia_profissional_descricao_atividades">Descrição das atividades</label><br>
-                        <textarea id="experiencia_profissional_descricao_atividades" name="curriculo[experiencia_profissinais_attributes][1469130933692][descricao_atividades]"></textarea>
+                        <textarea class="form-control" id="experiencia_profissional_descricao_atividades" name="curriculo[experiencia_profissinais_attributes][1469130933692][descricao_atividades]"></textarea>
 
                         <hr>
 
@@ -310,13 +312,13 @@
                         <br>
 
                         <label for="experiencia_profissional_descricao_atividades">Descrição das atividades</label><br>
-                        <textarea id="experiencia_profissional_descricao_atividades" name="curriculo[experiencia_profissinais_attributes][1469130933693][descricao_atividades]"></textarea>
+                        <textarea class="form-control" id="experiencia_profissional_descricao_atividades" name="curriculo[experiencia_profissinais_attributes][1469130933693][descricao_atividades]"></textarea>
 
-                      </div>
+                      
                     </fieldset>
 
 
-                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">Enviar</button>
                 </form>
               </section>
           </section>
