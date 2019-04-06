@@ -57,7 +57,7 @@
                 <label>Sexo: </label>
                 <label><input type="radio" name="curriculo[sexo]" value="Masculino"> Masculino</label>
                 <label><input type="radio" name="curriculo[sexo]" value="Feminino"> Feminino</label>
-
+                <br>
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="telefone">Telefone</label>
@@ -145,7 +145,8 @@
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="complemento">Complemento</label>
-                            <input id="complemento" name="curriculo[endereco_attributes][complemento]" class="form-control">
+                            <input id="complemento" name="curriculo[endereco_attributes][complemento]"
+                                class="form-control">
                         </div>
                         <div class="form-group col-md-6">
                             <label for="bairro">Bairro</label>
@@ -159,252 +160,294 @@
                 <fieldset>
                     <legend class="row justify-content-center titulo">Idiomas</legend>
                     <br>
-                    <label for="idioma_nome">Nome</label>
-                    <input id="idioma_nome" name="curriculo[idiomas_attributes][1469130103719][nome]"
-                        class="form-control">
-                    <br>
-
-                    <label for="idioma_nivel">Nível</label>
-                    <select class="form-control" name="curriculo[idiomas_attributes][1469130103719][nivel]">
-                        <option value=""></option>
-                        <option value="Básico">Básico</option>
-                        <option value="Intermediário">Intermediário</option>
-                        <option value="Avançado">Avançado</option>
-                        <option value="Fluente">Fluente</option>
-                    </select>
-                    <br>
-
-                    <hr>
-
-                    <label for="idioma_nome">Nome</label>
-                    <input id="idioma_nome" name="curriculo[idiomas_attributes][1469130103720][nome]"
-                        class="form-control">
-                    <br>
-
-                    <label for="idioma_nivel">Nível</label>
-                    <select class="form-control" name="curriculo[idiomas_attributes][1469130103720][nivel]">
-                        <option value=""></option>
-                        <option value="Básico">Básico</option>
-                        <option value="Intermediário">Intermediário</option>
-                        <option value="Avançado">Avançado</option>
-                        <option value="Fluente">Fluente</option>
-                    </select>
-                    <br>
-
-                    <hr>
-
-                    <label for="idioma_nome">Nome</label>
-                    <input id="idioma_nome" name="curriculo[idiomas_attributes][1469130103721][nome]"
-                        class="form-control">
-                    <br>
-
-                    <label for="idioma_nivel">Nível</label>
-                    <select class="form-control" name="curriculo[idiomas_attributes][1469130103721][nivel]">
-                        <option value=""></option>
-                        <option value="Básico">Básico</option>
-                        <option value="Intermediário">Intermediário</option>
-                        <option value="Avançado">Avançado</option>
-                        <option value="Fluente">Fluente</option>
-                    </select>
-                    <br>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="idioma_nome">Nome</label>
+                            <input id="idioma_nome" name="curriculo[idiomas_attributes][1469130103719][nome]"
+                                class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="idioma_nivel">Nível</label>
+                            <select class="form-control" name="curriculo[idiomas_attributes][1469130103719][nivel]">
+                                <option value=""></option>
+                                <option value="Básico">Básico</option>
+                                <option value="Intermediário">Intermediário</option>
+                                <option value="Avançado">Avançado</option>
+                                <option value="Fluente">Fluente</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="idioma_nome">Nome</label>
+                            <input id="idioma_nome" name="curriculo[idiomas_attributes][1469130103720][nome]"
+                                class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="idioma_nivel">Nível</label>
+                            <select class="form-control" name="curriculo[idiomas_attributes][1469130103720][nivel]">
+                                <option value=""></option>
+                                <option value="Básico">Básico</option>
+                                <option value="Intermediário">Intermediário</option>
+                                <option value="Avançado">Avançado</option>
+                                <option value="Fluente">Fluente</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="idioma_nome">Nome</label>
+                            <input id="idioma_nome" name="curriculo[idiomas_attributes][1469130103721][nome]"
+                                class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="idioma_nivel">Nível</label>
+                            <select class="form-control" name="curriculo[idiomas_attributes][1469130103721][nivel]">
+                                <option value=""></option>
+                                <option value="Básico">Básico</option>
+                                <option value="Intermediário">Intermediário</option>
+                                <option value="Avançado">Avançado</option>
+                                <option value="Fluente">Fluente</option>
+                            </select>
+                        </div>
+                    </div>
                 </fieldset>
 
                 <fieldset>
-                    <legend>Formação acadêmica</legend>
-                    <label for="formacao_academica_curso">Curso</label>
-                    <input id="formacao_academica_curso"
-                        name="curriculo[formacao_academicas_attributes][1469130700549][curso]" class="form-control">
-                    <br>
+                    <legend class="row justify-content-center titulo">Formação acadêmica</legend>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="formacao_academica_curso">Curso</label>
+                            <input id="formacao_academica_curso"
+                                name="curriculo[formacao_academicas_attributes][1469130700549][curso]"
+                                class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="formacao_academica_instituicao">Instituição</label>
+                            <input id="formacao_academica_instituicao"
+                                name="curriculo[formacao_academicas_attributes][1469130700549][instituicao]"
+                                class="form-control">
+                        </div>
+                    </div>
 
-                    <label for="formacao_academica_instituicao">Instituição</label>
-                    <input id="formacao_academica_instituicao"
-                        name="curriculo[formacao_academicas_attributes][1469130700549][instituicao]"
-                        class="form-control">
-                    <br>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="formacao_academica_data_inicio">Data de início</label>
+                            <input id="formacao_academica_data_inicio"
+                                name="curriculo[formacao_academicas_attributes][1469130700549][data_inicio]"
+                                class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="formacao_academica_data_fim">Data de término/previsão</label>
+                            <input id="formacao_academica_data_fim"
+                                name="curriculo[formacao_academicas_attributes][1469130700549][data_fim]"
+                                class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="formacao_academica_curso">Curso</label>
+                            <input id="formacao_academica_curso"
+                                name="curriculo[formacao_academicas_attributes][1469130700550][curso]"
+                                class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="formacao_academica_instituicao">Instituição</label>
+                            <input id="formacao_academica_instituicao"
+                                name="curriculo[formacao_academicas_attributes][1469130700550][instituicao]"
+                                class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="formacao_academica_data_inicio">Data de início</label>
+                            <input id="formacao_academica_data_inicio"
+                                name="curriculo[formacao_academicas_attributes][1469130700550][data_inicio]"
+                                class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="formacao_academica_data_fim">Data de término/previsão</label>
+                            <input id="formacao_academica_data_fim"
+                                name="curriculo[formacao_academicas_attributes][1469130700550][data_fim]"
+                                class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="formacao_academica_curso">Curso</label>
+                            <input id="formacao_academica_curso"
+                                name="curriculo[formacao_academicas_attributes][1469130700551][curso]"
+                                class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="formacao_academica_instituicao">Instituição</label>
+                            <input id="formacao_academica_instituicao"
+                                name="curriculo[formacao_academicas_attributes][1469130700551][instituicao]"
+                                class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="formacao_academica_data_inicio">Data de início</label>
+                            <input id="formacao_academica_data_inicio"
+                                name="curriculo[formacao_academicas_attributes][1469130700551][data_inicio]"
+                                class="form-control">
 
-                    <label for="formacao_academica_data_inicio">Data de início</label>
-                    <input id="formacao_academica_data_inicio"
-                        name="curriculo[formacao_academicas_attributes][1469130700549][data_inicio]"
-                        class="form-control">
-                    <br>
-
-                    <label for="formacao_academica_data_fim">Data de término/previsão</label>
-                    <input id="formacao_academica_data_fim"
-                        name="curriculo[formacao_academicas_attributes][1469130700549][data_fim]" class="form-control">
-                    <br>
-
-                    <hr>
-
-                    <label for="formacao_academica_curso">Curso</label>
-                    <input id="formacao_academica_curso"
-                        name="curriculo[formacao_academicas_attributes][1469130700550][curso]" class="form-control">
-                    <br>
-
-                    <label for="formacao_academica_instituicao">Instituição</label>
-                    <input id="formacao_academica_instituicao"
-                        name="curriculo[formacao_academicas_attributes][1469130700550][instituicao]"
-                        class="form-control">
-                    <br>
-
-                    <label for="formacao_academica_data_inicio">Data de início</label>
-                    <input id="formacao_academica_data_inicio"
-                        name="curriculo[formacao_academicas_attributes][1469130700550][data_inicio]"
-                        class="form-control">
-                    <br>
-
-                    <label for="formacao_academica_data_fim">Data de término/previsão</label>
-                    <input id="formacao_academica_data_fim"
-                        name="curriculo[formacao_academicas_attributes][1469130700550][data_fim]" class="form-control">
-                    <br>
-
-                    <hr>
-
-                    <label for="formacao_academica_curso">Curso</label>
-                    <input id="formacao_academica_curso"
-                        name="curriculo[formacao_academicas_attributes][1469130700551][curso]" class="form-control">
-                    <br>
-
-                    <label for="formacao_academica_instituicao">Instituição</label>
-                    <input id="formacao_academica_instituicao"
-                        name="curriculo[formacao_academicas_attributes][1469130700551][instituicao]"
-                        class="form-control">
-                    <br>
-
-                    <label for="formacao_academica_data_inicio">Data de início</label>
-                    <input id="formacao_academica_data_inicio"
-                        name="curriculo[formacao_academicas_attributes][1469130700551][data_inicio]"
-                        class="form-control">
-                    <br>
-
-                    <label for="formacao_academica_data_fim">Data de término/previsão</label>
-                    <input id="formacao_academica_data_fim"
-                        name="curriculo[formacao_academicas_attributes][1469130700551][data_fim]" class="form-control">
-                    <br>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="formacao_academica_data_fim">Data de término/previsão</label>
+                            <input id="formacao_academica_data_fim"
+                                name="curriculo[formacao_academicas_attributes][1469130700551][data_fim]"
+                                class="form-control">
+                        </div>
+                    </div>
                 </fieldset>
 
                 <fieldset>
-                    <legend>Experiência profissional</legend>
-                    <label for="experiencia_profissional_cargo">Cargo</label>
-                    <input id="experiencia_profissional_cargo"
-                        name="curriculo[experiencia_profissinais_attributes][1469130933690][cargo]"
-                        class="form-control">
+                    <legend class="row justify-content-center titulo">Experiência profissional</legend>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="experiencia_profissional_cargo">Cargo</label>
+                            <input id="experiencia_profissional_cargo"
+                                name="curriculo[experiencia_profissinais_attributes][1469130933690][cargo]"
+                                class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="experiencia_profissional_empresa">Empresa</label>
+                            <input id="experiencia_profissional_empresa"
+                                name="curriculo[experiencia_profissinais_attributes][1469130933690][empresa]"
+                                class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="experiencia_profissional_data_inicio">Data de início</label>
+                            <input id="experiencia_profissional_data_inicio"
+                                name="curriculo[experiencia_profissinais_attributes][1469130933690][data_inicio]"
+                                class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="experiencia_profissional_data_fim">Data de término/previsão</label>
+                            <input id="experiencia_profissional_data_fim"
+                                name="curriculo[experiencia_profissinais_attributes][1469130933690][data_fim]"
+                                class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label for="experiencia_profissional_descricao_atividades">Descrição das
+                            atividades</label><br>
+                        <textarea class="form-control" id="experiencia_profissional_descricao_atividades"
+                            name="curriculo[experiencia_profissinais_attributes][1469130933690][descricao_atividades]"></textarea>
+                    </div>
                     <br>
 
-                    <label for="experiencia_profissional_empresa">Empresa</label>
-                    <input id="experiencia_profissional_empresa"
-                        name="curriculo[experiencia_profissinais_attributes][1469130933690][empresa]"
-                        class="form-control">
-                    <br>
-
-                    <label for="experiencia_profissional_data_inicio">Data de início</label>
-                    <input id="experiencia_profissional_data_inicio"
-                        name="curriculo[experiencia_profissinais_attributes][1469130933690][data_inicio]"
-                        class="form-control">
-                    <br>
-
-                    <label for="experiencia_profissional_data_fim">Data de término/previsão</label>
-                    <input id="experiencia_profissional_data_fim"
-                        name="curriculo[experiencia_profissinais_attributes][1469130933690][data_fim]"
-                        class="form-control">
-                    <br>
-
-                    <label for="experiencia_profissional_descricao_atividades">Descrição das atividades</label><br>
-                    <textarea class="form-control" id="experiencia_profissional_descricao_atividades"
-                        name="curriculo[experiencia_profissinais_attributes][1469130933690][descricao_atividades]"></textarea>
-                    <br>
-
-                    <hr>
-
-                    <label for="experiencia_profissional_cargo">Cargo</label>
-                    <input id="experiencia_profissional_cargo"
-                        name="curriculo[experiencia_profissinais_attributes][1469130933691][cargo]"
-                        class="form-control">
-                    <br>
-
-                    <label for="experiencia_profissional_empresa">Empresa</label>
-                    <input id="experiencia_profissional_empresa"
-                        name="curriculo[experiencia_profissinais_attributes][1469130933691][empresa]"
-                        class="form-control">
-                    <br>
-
-                    <label for="experiencia_profissional_data_inicio">Data de início</label>
-                    <input id="experiencia_profissional_data_inicio"
-                        name="curriculo[experiencia_profissinais_attributes][1469130933691][data_inicio]"
-                        class="form-control">
-                    <br>
-
-                    <label for="experiencia_profissional_data_fim">Data de término/previsão</label>
-                    <input id="experiencia_profissional_data_fim"
-                        name="curriculo[experiencia_profissinais_attributes][1469130933691][data_fim]"
-                        class="form-control">
-                    <br>
-
-                    <label for="experiencia_profissional_descricao_atividades">Descrição das atividades</label><br>
-                    <textarea class="form-control" id="experiencia_profissional_descricao_atividades"
-                        name="curriculo[experiencia_profissinais_attributes][1469130933691][descricao_atividades]"></textarea>
-
-                    <hr>
-
-                    <label for="experiencia_profissional_cargo">Cargo</label>
-                    <input id="experiencia_profissional_cargo"
-                        name="curriculo[experiencia_profissinais_attributes][1469130933692][cargo]"
-                        class="form-control">
-                    <br>
-
-                    <label for="experiencia_profissional_empresa">Empresa</label>
-                    <input id="experiencia_profissional_empresa"
-                        name="curriculo[experiencia_profissinais_attributes][1469130933692][empresa]"
-                        class="form-control">
-                    <br>
-
-                    <label for="experiencia_profissional_data_inicio">Data de início</label>
-                    <input id="experiencia_profissional_data_inicio"
-                        name="curriculo[experiencia_profissinais_attributes][1469130933692][data_inicio]"
-                        class="form-control">
-                    <br>
-
-                    <label for="experiencia_profissional_data_fim">Data de término/previsão</label>
-                    <input id="experiencia_profissional_data_fim"
-                        name="curriculo[experiencia_profissinais_attributes][1469130933692][data_fim]"
-                        class="form-control">
-                    <br>
-
-                    <label for="experiencia_profissional_descricao_atividades">Descrição das atividades</label><br>
-                    <textarea class="form-control" id="experiencia_profissional_descricao_atividades"
-                        name="curriculo[experiencia_profissinais_attributes][1469130933692][descricao_atividades]"></textarea>
-
-                    <hr>
-
-                    <label for="experiencia_profissional_cargo">Cargo</label>
-                    <input id="experiencia_profissional_cargo"
-                        name="curriculo[experiencia_profissinais_attributes][1469130933693][cargo]"
-                        class="form-control">
-                    <br>
-
-                    <label for="experiencia_profissional_empresa">Empresa</label>
-                    <input id="experiencia_profissional_empresa"
-                        name="curriculo[experiencia_profissinais_attributes][1469130933693][empresa]"
-                        class="form-control">
-                    <br>
-
-                    <label for="experiencia_profissional_data_inicio">Data de início</label>
-                    <input id="experiencia_profissional_data_inicio"
-                        name="curriculo[experiencia_profissinais_attributes][1469130933693][data_inicio]"
-                        class="form-control">
-                    <br>
-
-                    <label for="experiencia_profissional_data_fim">Data de término/previsão</label>
-                    <input id="experiencia_profissional_data_fim"
-                        name="curriculo[experiencia_profissinais_attributes][1469130933693][data_fim]"
-                        class="form-control">
-                    <br>
-
-                    <label for="experiencia_profissional_descricao_atividades">Descrição das atividades</label><br>
-                    <textarea class="form-control" id="experiencia_profissional_descricao_atividades"
-                        name="curriculo[experiencia_profissinais_attributes][1469130933693][descricao_atividades]"></textarea>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="experiencia_profissional_cargo">Cargo</label>
+                            <input id="experiencia_profissional_cargo"
+                                name="curriculo[experiencia_profissinais_attributes][1469130933691][cargo]"
+                                class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="experiencia_profissional_empresa">Empresa</label>
+                            <input id="experiencia_profissional_empresa"
+                                name="curriculo[experiencia_profissinais_attributes][1469130933691][empresa]"
+                                class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="experiencia_profissional_data_inicio">Data de início</label>
+                            <input id="experiencia_profissional_data_inicio"
+                                name="curriculo[experiencia_profissinais_attributes][1469130933691][data_inicio]"
+                                class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="experiencia_profissional_data_fim">Data de término/previsão</label>
+                            <input id="experiencia_profissional_data_fim"
+                                name="curriculo[experiencia_profissinais_attributes][1469130933691][data_fim]"
+                                class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label for="experiencia_profissional_descricao_atividades">Descrição das atividades</label><br>
+                        <textarea class="form-control" id="experiencia_profissional_descricao_atividades"
+                            name="curriculo[experiencia_profissinais_attributes][1469130933691][descricao_atividades]"></textarea>
+                    </div>
 
 
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="experiencia_profissional_cargo">Cargo</label>
+                            <input id="experiencia_profissional_cargo"
+                                name="curriculo[experiencia_profissinais_attributes][1469130933692][cargo]"
+                                class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="experiencia_profissional_empresa">Empresa</label>
+                            <input id="experiencia_profissional_empresa"
+                                name="curriculo[experiencia_profissinais_attributes][1469130933692][empresa]"
+                                class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="experiencia_profissional_data_inicio">Data de início</label>
+                            <input id="experiencia_profissional_data_inicio"
+                                name="curriculo[experiencia_profissinais_attributes][1469130933692][data_inicio]"
+                                class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+
+                            <label for="experiencia_profissional_data_fim">Data de término/previsão</label>
+                            <input id="experiencia_profissional_data_fim"
+                                name="curriculo[experiencia_profissinais_attributes][1469130933692][data_fim]"
+                                class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label for="experiencia_profissional_descricao_atividades">Descrição das atividades</label><br>
+                        <textarea class="form-control" id="experiencia_profissional_descricao_atividades"
+                            name="curriculo[experiencia_profissinais_attributes][1469130933692][descricao_atividades]"></textarea>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="experiencia_profissional_cargo">Cargo</label>
+                            <input id="experiencia_profissional_cargo"
+                                name="curriculo[experiencia_profissinais_attributes][1469130933693][cargo]"
+                                class="form-control">
+
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="experiencia_profissional_empresa">Empresa</label>
+                            <input id="experiencia_profissional_empresa"
+                                name="curriculo[experiencia_profissinais_attributes][1469130933693][empresa]"
+                                class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="experiencia_profissional_data_inicio">Data de início</label>
+                            <input id="experiencia_profissional_data_inicio"
+                                name="curriculo[experiencia_profissinais_attributes][1469130933693][data_inicio]"
+                                class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="experiencia_profissional_data_fim">Data de término/previsão</label>
+                            <input id="experiencia_profissional_data_fim"
+                                name="curriculo[experiencia_profissinais_attributes][1469130933693][data_fim]"
+                                class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label for="experiencia_profissional_descricao_atividades">Descrição das atividades</label><br>
+                        <textarea class="form-control" id="experiencia_profissional_descricao_atividades"
+                            name="curriculo[experiencia_profissinais_attributes][1469130933693][descricao_atividades]"></textarea>
+                    </div>
                 </fieldset>
+                <br>
                 <br>
 
                 <button type="submit" class="btn btn-primary btn-lg btn-block">Enviar</button>
