@@ -1,8 +1,12 @@
 .bg{
   background: url('../images/trackerlogimg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /*
   width: 100%;
-  height: 350vh;
-  background-size: 100%;
+  height: 325vh;
+  */
 }
 
 .form-container{
