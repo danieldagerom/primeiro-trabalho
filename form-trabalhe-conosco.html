@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
     <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
     <script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
-    <script src="js/cpfvalidation.js"></script>
+    <script src="cpfvalidation.js"></script>
 
 
 
@@ -40,18 +40,20 @@
         crossorigin="anonymous"></script>
     <section class="container-fluid bg">
         <section class="row justify-content-center">
-            <form class="form-container">
+            <form class="form-container needs-validation" novalidate>
                 <h2 class="row justify-content-center ">TRABALHE CONOSCO</h2>
                 <h5 class="row justify-content-center ">Preencha o formulario abaixo:</h5>
                 <br>
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="nome_completo" class="col-form-label">Nome completo</label>
-                        <input id="nome_completo" name="curriculo[nome_completo]" class="form-control">
+                        <input id="nome_completo" name="curriculo[nome_completo]" class="form-control" required>
+                        <div class="invalid-feedback">Escreva seu nome completo!</div>
                     </div>
                     <div class="form-group col-md-6">
                         <label for="email_principal" class="col-form-label">E-mail principal</label>
-                        <input id="email_principal" name="curriculo[email_principal]" class="form-control">
+                        <input id="email_principal" name="curriculo[email_principal]" class="form-control" required>
+                        <div class="invalid-feedback">É preciso de pelomenos um e-mail para contato!</div>
                     </div>
                 </div>
 
@@ -63,22 +65,32 @@
                     </div>
                     <div class="form-group col-md-6">
                         <label for="cpf">CPF</label>
-                        <input id="cpf" name="curriculo[cpf]" class="form-control" onclick="cpfvalidation()">
+                        <input id="cpf" name="curriculo[cpf]" class="form-control" onchange="cpfvalidation(this.value)">
 
                     </div>
                 </div>
-                <label>Sexo: </label>
-                <label><input type="radio" name="curriculo[sexo]" value="Masculino"> Masculino</label>
-                <label><input type="radio" name="curriculo[sexo]" value="Feminino"> Feminino</label>
+
                 <br>
                 <div class="form-row">
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-4">
                         <label for="telefone">Telefone</label>
-                        <input id="telefone" name="curriculo[telefone]" class="form-control">
+                        <input id="telefone" name="curriculo[telefone]" class="form-control" required>
+                        <div class="invalid-feedback">Informe o telefone fixo para contato!</div>
                     </div>
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-4">
                         <label for="celular">Celular</label>
-                        <input id="celular" name="curriculo[celular]" class="form-control">
+                        <input id="celular" name="curriculo[celular]" class="form-control" required>
+                        <div class="invalid-feedback">Informe o celular para contato!</div>
+
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="sexo"> Sexo </label>
+                        <select class="form-control" id="sexo" name="curriculo[sexo]" required>
+                            <option value=""></option>
+                            <option value="Masculino">Masculino</option>
+                            <option value="Solteiro">Feminino</option>
+                        </select>
+                        <div class="invalid-feedback">Informe seu Sexo!</div>
                     </div>
                 </div>
 
@@ -109,15 +121,13 @@
                     <div class="form-group col-md-6">
                         <label for="data_nascimento">Data de nascimento</label>
                         <div class="input-group date" data-provide="datepicker">
-                            <input type="text" class="form-control" id="data_nascimento">
-                            <div class="input-group-addon">
-                                <span class="glyphicon glyphicon-th"></span>
-                            </div>
+                            <input type="text" class="form-control" id="data_nascimento" required>
+                            <div class="invalid-feedback">Informe sua data de nascimento!</div>
                         </div>
                     </div>
                     <div class="form-group col-md-3">
                         <label for="estado_civil">Estado civil</label>
-                        <select class="form-control" id="estado_civil" name="curriculo[estado_civil]">
+                        <select class="form-control" id="estado_civil" name="curriculo[estado_civil]" required>
                             <option value=""></option>
                             <option value="Casado">Casado</option>
                             <option value="Solteiro">Solteiro</option>
@@ -125,6 +135,7 @@
                             <option value="Divorciado">Divorciado</option>
                             <option value="Viúvo">Viúvo</option>
                         </select>
+                        <div class="invalid-feedback">Informe o seu estado civil!</div>
                     </div>
                     <div class="form-group col-md-3">
                         <label for="senioridade">Senioridade</label>
@@ -147,16 +158,18 @@
                     <div class="form-row">
                         <div class="form-group col-md-3">
                             <label for="cep">CEP</label>
-                            <input id="cep" name="curriculo[endereco_attributes][cep]" class="form-control">
+                            <input id="cep" name="curriculo[endereco_attributes][cep]" class="form-control" required>
+                            <div class="invalid-feedback">Informe o cep!</div>
                         </div>
                         <div class="form-group col-md-5">
                             <label for="logradouro">Logradouro</label>
-                            <input id="logradouro" name="curriculo[endereco_attributes][logradouro]"
-                                class="form-control">
+                            <input id="logradouro" name="curriculo[endereco_attributes][logradouro]"class="form-control" required>
+                            <div class="invalid-feedback">Informe o logradouro!</div>   
                         </div>
                         <div class="form-group col-md-4">
                             <label for="numero">Número</label>
-                            <input id="numero" name="curriculo[endereco_attributes][numero]" class="form-control">
+                            <input id="numero" name="curriculo[endereco_attributes][numero]" class="form-control" required>
+                            <div class="invalid-feedback">Informe o número!</div>
                         </div>
                     </div>
 
@@ -168,7 +181,8 @@
                         </div>
                         <div class="form-group col-md-6">
                             <label for="bairro">Bairro</label>
-                            <input id="bairro" name="curriculo[endereco_attributes][bairro]" class="form-control">
+                            <input id="bairro" name="curriculo[endereco_attributes][bairro]" class="form-control" required>
+                            <div class="invalid-feedback">Informe o bairro!</div>
                             <br>
                         </div>
                     </div>
@@ -471,6 +485,17 @@
                 <button type="submit" class="btn btn-primary btn-lg btn-block">Enviar</button>
             </form>
             <script>
+                var form = document.querySelector('.needs-validation');
+                form.addEventListener('submit', function (event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                })
+            </script>
+            </script>
+            <script>
                 $(function () {
                     $("#data_nascimento, #formacao_academica_data_inicio_1, #formacao_academica_data_fim_1, #formacao_academica_data_inicio_2, #formacao_academica_data_fim_2, #formacao_academica_data_inicio_3, #formacao_academica_data_fim_3, #experiencia_profissional_data_inicio_4, #experiencia_profissional_data_fim_4, #experiencia_profissional_data_inicio_5, #experiencia_profissional_data_fim_5, #experiencia_profissional_data_inicio_6, #experiencia_profissional_data_fim_6, #experiencia_profissional_data_inicio_7, #experiencia_profissional_data_fim_7").datepicker({
                         dateFormat: 'dd/mm/yy',
@@ -484,7 +509,7 @@
                         monthNames: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
                         monthNamesShort: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
                         showButtonPanel: true,
-                        minDate: new Date(1980,1 - 1, 1)
+                        minDate: new Date(1980, 1 - 1, 1)
                     });
                 });             
             </script>
