@@ -86,7 +86,7 @@
                     <div class="form-group col-md-4">
                         <label for="sexo"> Sexo </label>
                         <select class="form-control" id="sexo" name="curriculo[sexo]" required>
-                            <option value=""></option>
+                            <option value="">Selecione</option>
                             <option value="Masculino">Masculino</option>
                             <option value="Solteiro">Feminino</option>
                         </select>
@@ -128,7 +128,7 @@
                     <div class="form-group col-md-3">
                         <label for="estado_civil">Estado civil</label>
                         <select class="form-control" id="estado_civil" name="curriculo[estado_civil]" required>
-                            <option value=""></option>
+                            <option value="">Selecione</option>
                             <option value="Casado">Casado</option>
                             <option value="Solteiro">Solteiro</option>
                             <option value="União Estável">União Estável</option>
@@ -140,7 +140,7 @@
                     <div class="form-group col-md-3">
                         <label for="senioridade">Senioridade</label>
                         <select class="form-control" id="senioridade" name="curriculo[senioridade]">
-                            <option value=""></option>
+                            <option value="">Selecione</option>
                             <option value="Estágio">Estágio</option>
                             <option value="Trainee">Trainee</option>
                             <option value="Operacional">Operacional</option>
@@ -201,7 +201,7 @@
                         <div class="form-group col-md-6">
                             <label for="idioma_nivel">Nível</label>
                             <select class="form-control" name="curriculo[idiomas_attributes][1469130103719][nivel]">
-                                <option value=""></option>
+                                <option value="">Selecione</option>
                                 <option value="Básico">Básico</option>
                                 <option value="Intermediário">Intermediário</option>
                                 <option value="Avançado">Avançado</option>
@@ -218,7 +218,7 @@
                         <div class="form-group col-md-6">
                             <label for="idioma_nivel">Nível</label>
                             <select class="form-control" name="curriculo[idiomas_attributes][1469130103720][nivel]">
-                                <option value=""></option>
+                                <option value="">Selecione</option>
                                 <option value="Básico">Básico</option>
                                 <option value="Intermediário">Intermediário</option>
                                 <option value="Avançado">Avançado</option>
@@ -235,7 +235,7 @@
                         <div class="form-group col-md-6">
                             <label for="idioma_nivel">Nível</label>
                             <select class="form-control" name="curriculo[idiomas_attributes][1469130103721][nivel]">
-                                <option value=""></option>
+                                <option value="">Selecione</option>
                                 <option value="Básico">Básico</option>
                                 <option value="Intermediário">Intermediário</option>
                                 <option value="Avançado">Avançado</option>
@@ -497,7 +497,8 @@
             </script>
             <script>
                 $(function () {
-                    $("#data_nascimento, #formacao_academica_data_inicio_1, #formacao_academica_data_fim_1, #formacao_academica_data_inicio_2, #formacao_academica_data_fim_2, #formacao_academica_data_inicio_3, #formacao_academica_data_fim_3, #experiencia_profissional_data_inicio_4, #experiencia_profissional_data_fim_4, #experiencia_profissional_data_inicio_5, #experiencia_profissional_data_fim_5, #experiencia_profissional_data_inicio_6, #experiencia_profissional_data_fim_6, #experiencia_profissional_data_inicio_7, #experiencia_profissional_data_fim_7").datepicker({
+                    $(
+                        "#data_nascimento, #formacao_academica_data_inicio_1, #formacao_academica_data_fim_1, #formacao_academica_data_inicio_2, #formacao_academica_data_fim_2, #formacao_academica_data_inicio_3, #formacao_academica_data_fim_3, #experiencia_profissional_data_inicio_4, #experiencia_profissional_data_fim_4, #experiencia_profissional_data_inicio_5, #experiencia_profissional_data_fim_5, #experiencia_profissional_data_inicio_6, #experiencia_profissional_data_fim_6, #experiencia_profissional_data_inicio_7, #experiencia_profissional_data_fim_7").datepicker({
                         dateFormat: 'dd/mm/yy',
                         changeMonth: true,
                         changeYear: true,
